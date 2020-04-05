@@ -1,55 +1,132 @@
-body {
-  padding: 0;
+﻿body {
+  min-width: 800px;
+  background: linear-gradient(to right, #2C3E50 0%, #FD746C 100%);
   margin: 0;
-  background: #fff;
-  /* Old browsers */
-  /*background: -moz-linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);*/
-  /* FF3.6-15 */
-  /*background: -webkit-linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);*/
-  /* Chrome10-25,Safari5.1-6 */
-  /*background: linear-gradient(45deg, #f7f7f7 0%, #EAE0D5 100%);*/
+  padding:0;
+}
+
+.logo{
+  width:90px;
+  height:60px;
+  padding-left: 10px;
+  margin: 0;
+  float: left;
+}
+
+.pic{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: example2;
+  animation-duration: 1.5s;
+}
+
+.main {
+  padding: 1px;
+  padding-bottom: 338px;
+  margin: 0px;
 }
 
 /** Header styles **/
 
 .header {
-  background-color: #000;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 200px;
+  background: #fff;
+  height: 60px;
   background-position: center center;
 }
 
-.textBox {
-  color: #06c;
-  font-family: 'Baloo Thambi', sans-serif;
+.button {
+  font-weight: 500;
+  font-family: 'Raleway', sans-serif;
+  background-color: #fff;
+  border: none;
+  color: #0;
+  padding: 15px 70px;
   text-align: center;
-  margin: 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 32px;
+  margin: 100px 200px;
+  border-radius: 12px;
+  cursor: pointer;
+  float: center;
+  transition: 0.3s;
 }
 
-h1 {
-  color: #06c;
-  font-family: 'Baloo Thambi', sans-serif;
-  font-size: 100px;
-  line-height: 76px;
-  margin: 0px 0px 60px 0px;
-  position: relative;
-  text-align: center;
-  top: 20%;
-  padding: 0px;
+.button:hover {
+  background-color: #000;
+  color: #fff;
+}
 
+img {
+  width: 405.6px;
+  height: 540.8px;
+  float:right;
+  margin-right: 200px;
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
 }
 
 /** List style **/
 
-h2 {
-  color: #c0c;
-  font-family: 'Baloo Thambi', sans-serif;
-  font-size: 28px;
+h1 {
+  color: #000;
+  font-family: 'Raleway', sans-serif;
+  font-size: 150px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  padding: 0px;
+  padding-left: 100px;
+  top: 20%;
+  position: relative;
+  animation-name: example;
+  animation-duration: 1s;
+}
+
+@keyframes example {
+  0%   {left:200px; top:0px;}
+  100%  {left:0px; top:0px;}
+
+}
+
+@keyframes example2 {
+  0%   {left:300px; top:0px;}
+  100%  {left:0px; top:0px;}
+
+}
+
+p {
+  color: #22181C;
+  font-family: 'Raleway', sans-serif;
+  font-size: 23px;
   font-weight: 500;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 15px:
+  padding-left: 100px;
+  margin: 5px;
+  position: relative;
+  animation-name: example2;
+  animation-duration: 1.5s;
+}
+
+h2 {
+  color: #000;
+  font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+  left: 100px;
+  float: right;
+  padding: 10px;
+  margin-right:20px;
+  margin-top:10px;
+  text-align: right;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+h3 {
+  font-family: 'Vibes';
+  color: #fff;
+  display:inline-block;
+  margin: 0;
+  padding: 10px;
+  margin-left: 10px;
 }
 
 ul {
@@ -59,50 +136,45 @@ ul {
 }
 
 li {
-  color: #06c;
-  font-family: 'Baloo Thambi', sans-serif;
   border-bottom: 1px solid #E4BB97;
-  list-style: list;
+  list-style: none;
   margin: 100px 0px;
   padding-bottom: 60px;
 }
 
-p {
-  color: #06c;
-  line-height: 32px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 20px;
-  font-weight: 100;
-  margin: 40px 100px 40px 100px;
-}
-
-/*a {
+a {
   color: #214E34;
   font-family: 'Raleway', sans-serif;
   font-size: 13px;
   font-weight: 900;
   text-align: left;
-  text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: 2px;
-}*/
 
-h5 {
-  color: #f4d742;
-  line-height: 32px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 100px;
-  font-weight: 100;
-  margin: 100px 100px 100px 100px;
-  text-align: center;
+  letter-spacing: 2px;
 }
 
-h4 {
-  color: #ac41f4;
-  font-family: 'Raleway', sans-serif;
-  font-size: 28px;
-  font-weight: 500;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 15px:
+.rectangle {
+  height: 300px;
+  width: 50px;
+  background-color: #FFFFFF;
+  border-radius: 40%;
+}
+
+.fa {
+  display:inline-block;
+  color: #000;
+  left: 100px;
+  float:right;
+  padding: 10px;
+  margin-right:20px;
+  margin-top:4px;
+  font-size: 30px;
+  width: 20px;
+  text-align: right;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 100;
 }
