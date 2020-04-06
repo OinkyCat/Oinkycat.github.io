@@ -1,3 +1,11 @@
+/** Main styles **/
+
+.header {
+  background: #fff;
+  height: 60px;
+  background-position: center center;
+}
+
 body {
   background: linear-gradient(to right, #2C3E50 0%, #FD746C 100%);
   margin: 0;
@@ -9,45 +17,15 @@ body {
   height:auto;
 }
 
-.logo{
-  width:90px;
-  height:60px;
-  padding-left: 10px;
-  margin: 0;
-  float: left;
-}
-
-.pic{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  animation-name: example2;
-  animation-duration: 1.5s;
-  float:right;
-}
-
-
-.main {
-  padding: 1px;
-  padding-bottom: 338px;
-  margin: 0px;
-}
-
-/** Header styles **/
-
-.header {
-  background: #fff;
-  height: 60px;
-  background-position: center center;
-}
+/* Button styles */
 
 .button {
   font-weight: 500;
   font-family: 'Raleway', sans-serif;
   background-color: #fff;
   border: none;
-  color: #0;
   padding: 15px 70px;
   text-align: left;
-  text-decoration: none;
   display: inline-block;
   font-size: 32px;
   margin: 100px 100px;
@@ -63,6 +41,8 @@ body {
   color: #fff;
 }
 
+/* Image styles */
+
 img {
   width: 405.6px;
   height: 540.8px;
@@ -73,7 +53,22 @@ img {
   height: auto;
 }
 
-/** List style **/
+.logo{
+  width:90px;
+  height:60px;
+  padding-left: 10px;
+  margin: 0;
+  float: left;
+}
+
+.pic{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation-name: slide2;
+  animation-duration: 1.5s;
+  float:right;
+}
+
+/** Text styles **/
 
 h1 {
   color: #000;
@@ -83,22 +78,20 @@ h1 {
   margin-bottom: 0px;
   padding: 0px;
   padding-left: 100px;
-  top: 20%;
   position: relative;
-  animation-name: example;
+  animation-name: slide;
   animation-duration: 1s;
 }
 
-@keyframes example {
-  0%   {left:200px; top:0px;}
-  100%  {left:0px; top:0px;}
-
-}
-
-@keyframes example2 {
-  0%   {left:300px; top:0px;}
-  100%  {left:0px; top:0px;}
-
+h2 {
+  color: #000;
+  font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+  float: right;
+  padding: 10px;
+  margin-right:20px;
+  margin-top:10px;
+  text-align: right;
 }
 
 p {
@@ -108,53 +101,11 @@ p {
   font-weight: 500;
   padding-left: 100px;
   margin: 5px;
-  position: relative;
-  animation-name: example2;
+  animation-name: slide;
   animation-duration: 1.5s;
 }
 
-h2 {
-  color: #000;
-  font-family: 'Raleway', sans-serif;
-  font-size: 17px;
-  left: 100px;
-  float: right;
-  padding: 10px;
-  margin-right:20px;
-  margin-top:10px;
-  text-align: right;
-  text-decoration: none;
-  border-radius: 50%;
-}
-
-h3 {
-  font-family: 'Vibes';
-  color: #fff;
-  display:inline-block;
-  margin: 0;
-  padding: 10px;
-  margin-left: 10px;
-}
-
-
-
-a {
-  color: #214E34;
-  font-family: 'Raleway', sans-serif;
-  font-size: 13px;
-  font-weight: 900;
-  text-align: left;
-  text-decoration: none;
-
-  letter-spacing: 2px;
-}
-
-.rectangle {
-  height: 300px;
-  width: 50px;
-  background-color: #FFFFFF;
-  border-radius: 40%;
-}
+/* Icon styles */
 
 .fa {
   display:inline-block;
@@ -172,8 +123,24 @@ a {
 }
 
 .fa:hover {
-  opacity: 100;
+  opacity: 50%;
 }
+
+/* Animation styles */
+
+@keyframes slide {
+  0%   {left:200px; top:0px;}
+  100%  {left:0px; top:0px;}
+
+}
+
+@keyframes slide2 {
+  0%   {left:300px; top:0px;}
+  100%  {left:0px; top:0px;}
+
+}
+
+/*Responsive styles*/
 
 @media (max-width: 660px) 
 {
@@ -185,8 +152,9 @@ a {
     {
         display: none;
     }
-
 }
+
+
 
 @media (max-width: 1500px) 
 {
@@ -197,6 +165,7 @@ a {
 
     }
 }
+
 @media (max-width: 1100px) 
 {
     .pic
@@ -206,7 +175,16 @@ a {
         float: left;
         margin-left: 10px;
         margin-right: 10px;
-   
+        animation-name: none;
+    }
+    h1
+    {
+        animation-name: none;
+    }
+    p
+    {
+        animation-name: none;
+        padding-right: 100px;
     }
 }
 @media (max-width: 1300px) 
