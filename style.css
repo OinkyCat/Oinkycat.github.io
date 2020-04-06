@@ -101,7 +101,7 @@ p {
   font-weight: 500;
   padding-left: 100px;
   margin: 5px;
-  animation-name: slide;
+  animation-name: slide2;
   animation-duration: 1.5s;
 }
 
@@ -180,11 +180,13 @@ p {
     h1
     {
         animation-name: none;
+        padding-left: 50px;
     }
     p
     {
         animation-name: none;
-        padding-right: 100px;
+        padding-right: 50px;
+        padding-left: 50px;
     }
 }
 @media (max-width: 1300px) 
